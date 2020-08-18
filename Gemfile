@@ -43,3 +43,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faker'
 gem 'httparty'
 
+gem 'jikan.rb'
+# css materialize
+# gem 'materialize-sass'

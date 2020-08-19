@@ -27,17 +27,5 @@
       byebug
        Post.create(artwork: animeHash[:image], description: animeHash[:description], user_id: User.all.sample.id, likes: rand(1..10))
     end
-
-
-  
-
-  
-
-
-
-
-    
-
-
   
   puts 'seeds done'

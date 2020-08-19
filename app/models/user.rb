@@ -1,4 +1,4 @@
   class User < ApplicationRecord
-    has_many :post 
-    has_many :comments, through: :post 
+    has_many :post, dependent: :destroy
+    has_many :comments, dependent: :destroy
   end

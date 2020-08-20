@@ -2,12 +2,18 @@ class UsersController < ApplicationController
 
   def index 
     @users = User.all 
-    render json: @users
+    options = {
+      include: [:post]
+    }
+    render json: UserSerializer.new(@users, options)
   end
 
   def show 
     @user = User.find_by(params[:id])
-    render json: @user
+    options = {
+      include: [:post]
+    }
+    render json: UserSerializer.new(@user, options)
     # // UserSerializer.new(@user).to_serialized_json
   end
 
